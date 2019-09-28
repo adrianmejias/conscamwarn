@@ -1,24 +1,32 @@
 'use strict';
 
 const expect = require('chai').expect;
-const conscamwarn = require('../index');
+const { ConScamWarn } = require('../src/index');
 
 const locale = (new Intl.NumberFormat()).resolvedOptions().locale;
 const defaultLocale = 'en-US';
-let defaultMessage = conscamwarn.message;
+let defaultMessage = ConScamWarn.message;
+const customMessage = 'custom message';
 
 // console.log('locale', locale);
 
-describe('#conscamwarn', () => {
+describe('#ConScamWarn', () => {
     it(`should convert default locale string: ${defaultLocale}`, () => {
-        const result = conscamwarn.getMessage();
+        const result = ConScamWarn.getMessage();
         defaultMessage = defaultMessage.toLocaleString(defaultLocale);
         expect(result).to.equal(defaultMessage);
     });
 
     it(`should convert locale string: ${locale}`, () => {
-        const result = conscamwarn.getMessage(locale);
+        ConScamWarn.locale = locale;
+        const result = ConScamWarn.getMessage();
         defaultMessage = defaultMessage.toLocaleString(locale);
         expect(result).to.equal(defaultMessage);
+    });
+
+    it(`should not match default locale string: ${customMessage}`, () => {
+        const result = ConScamWarn.getMessage();
+        defaultMessage = customMessage.toLocaleString(locale);
+        expect(result).not.equal(defaultMessage);
     });
 });

@@ -10,12 +10,11 @@ A small library that adds a console log with language warning about scams.
 ## Usage
 
 ```typescript
-const conscamwarn = require('conscamwarn');
-const message = conscamwarn();
+const { ConScamWarn } = require('conscamwarn');
+(ConScamWarn.showMessage)();
 ```
-  
-**Output should be:** `This is a browser feature intended for developers. If someone told you to copy-paste something here to enable a site feature or "hack" someone elses account, it is likely a scam and will give them access to your account.`
 
+**Output should be:** `This is a browser feature intended for developers. If someone told you to copy-paste something here to enable a site feature or "hack" someone elses account, it is likely a scam and will give them access to your account.`
 
 ## Tests
 

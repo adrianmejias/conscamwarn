@@ -1,16 +1,30 @@
 {
   "name": "conscamwarn",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A small library that adds a console log with language warning about scams.",
-  "main": "index.js",
+  "main": "./index.js",
   "scripts": {
     "test": "mocha --reporter spec"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/adrianmejias/conscamwarn.git"
+  },
   "keywords": [],
-  "author": "Adrian Mejias",
-  "license": "ISC",
+  "author": "Adrian Mejias <adrianmejias@gmail.com> (https://adrianmejias.com)",
+  "bugs": {
+    "url": "https://github.com/adrianmejias/conscamwarn/issues"
+  },
+  "engines": {
+    "node": "*"
+  },
+  "homepage": "https://github.com/adrianmejias/conscamwarn",
+  "license": "MIT",
   "devDependencies": {
     "chai": "^4.2.0",
     "mocha": "^6.2.0"
-  }
+  },
+  "files": [
+    "dist"
+  ]
 }
