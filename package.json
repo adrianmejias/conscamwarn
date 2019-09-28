@@ -1,0 +1,16 @@
+{
+  "name": "conscamwarn",
+  "version": "0.1.0",
+  "description": "A small library that adds a console log with language warning about scams.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --reporter spec"
+  },
+  "keywords": [],
+  "author": "Adrian Mejias",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.2.0"
+  }
+}
