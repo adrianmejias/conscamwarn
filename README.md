@@ -1,7 +1,7 @@
 Console Scam Warn
 =========
 
-A small library that adds a console log with language warning about scams.
+A small library that adds a console log with language warning about scams. This is not a serious project so please use at your own discretion.
 
 ## Installation
 
